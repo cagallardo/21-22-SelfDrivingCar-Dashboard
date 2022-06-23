@@ -1,0 +1,233 @@
+body {
+    background-color: #272727;
+    color: #aeaeae;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#showMoreDiv {
+    background-color: rgb(137, 198, 199);
+    color: #272727;
+    border-radius: 20px;
+}
+
+.cameraContainer {
+    border: 3px solid #aeaeae;
+    border-radius: 5px;
+    display: flex;
+}
+
+#controlContainer {
+    width: 35%;
+    color: #272727;
+    background-color: #aeaeae;
+    border: 3px solid #aeaeae;
+    border-radius: 5px;
+}
+
+a:link {
+  color: rgb(39,252,255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(39,252,255);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.sensorDataSmall {
+    width: 25%;
+}
+
+.sensorDataLarge {
+    width: 40%;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#hefChart {
+    width: 100%
+}
+
+#batChart {
+    width: 100%
+}
+
+#imuChart {
+    width: 100%
+}
+
+#tmpChart {
+    width: 100%
+}
+
+#hmdChart {
+    width: 100%
+}
+
+#showMoreButton {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    color: rgb(39,252,255);
+    overflow: hidden;
+    outline: none;
+}
+
+.rightMenuButton {
+    cursor: pointer;
+    float: right;
+}
+
+.slide-container {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(39,252,255);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(39,252,255);
+  cursor: pointer;
+}
+
+#startCar:hover {
+    background-color: lightgreen;
+}
+
+#stopCar:hover {
+    background-color: red;
+}
+
+.controlButton {
+    background-color: white;
+    width: 25%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.output {
+  text-align: center;
+}
+
+.smallControlButton {
+    background-color: white;
+    cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggle:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .toggle {
+  background-color: green;
+}
+
+input:focus + .toggle {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .toggle:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.toggle.round {
+  border-radius: 27px;
+}
+
+.toggle.round:before {
+  border-radius: 50%;
+}
